@@ -1,6 +1,6 @@
 module.exports = {
 	configs: {
-		recommended: require( './lib/configs/recommended' ),
+		base: require( './lib/configs/base' ),
 		react: require( './lib/configs/react' ),
 	},
 };

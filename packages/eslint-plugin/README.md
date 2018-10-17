@@ -15,13 +15,13 @@ $ npm install @nisje/eslint-plugin --save-dev
 ```
 
 ## Usage
-This plugin exports a [`recommended` config](index.js) that enforces best practices.
+This plugin exports a [`base` config](index.js) that enforces best practices.
 
 Create your own `.eslintrc.js` configuration file:
 
 ```js
 {
-	"extends": "plugin:@nisje/recommended",
+	"extends": "plugin:@nisje/base",
 	"plugins": [
 		"@nisje"
 	]
@@ -30,12 +30,12 @@ Create your own `.eslintrc.js` configuration file:
 
 Or see the [ESLint docs](http://eslint.org/docs/user-guide/configuring.html#configuration-file-formats) for more information about configuration file formats.
 
-You can also stack any of the extra shared configs on top of the "recommended" config by extending an array of linting configs. For example, this package provides a React linting config, which can be added to the recommended config with the following configuration file:
+You can also stack any of the extra shared configs on top of the "base" config by extending an array of linting configs. For example, this package provides a React linting config, which can be added to the base config with the following configuration file:
 
 ```js
 {
 	"extends": [
-		"plugin:@nisje/recommended",
+		"plugin:@nisje/base",
 		"plugin:@nisje/react"
 	]
 }
@@ -45,4 +45,4 @@ You can also stack any of the extra shared configs on top of the "recommended" c
 The following rulesets are available:
 
 *   **react**: Enforces best React.js practices
-*   **recommended**: Enforces best practices and possible errors
+*   **base**: Enforces best practices and possible errors

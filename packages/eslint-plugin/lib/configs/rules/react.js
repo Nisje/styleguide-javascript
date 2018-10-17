@@ -4,6 +4,10 @@ module.exports = {
 	// Specify whether double or single quotes should be used in JSX attributes
 	// https://eslint.org/docs/rules/jsx-quotes
 	'jsx-quotes': [ 'error', 'prefer-double' ],
+	
+	// Forbid "button" element without an explicit "type" attribute
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
+	'react/button-has-type': 'error',
 
 	// Enforce boolean attributes notation in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md

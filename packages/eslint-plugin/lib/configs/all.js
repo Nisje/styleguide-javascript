@@ -10,6 +10,9 @@ module.exports = {
 	],
 	rules: merge(
 		require( './rules/best-practices' ),
+		require( './rules/esnext' ),
+		require( './rules/jsx-a11y' ),
 		require( './rules/react' ),
+		require( './rules/stylistic-issues' ),
 	),
 };

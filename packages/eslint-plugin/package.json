@@ -1,5 +1,8 @@
 {
   "name": "@nisje/eslint-plugin",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.1",
   "description": "Nisje's ESLint plugin, following our styleguide",
   "license": "MIT",

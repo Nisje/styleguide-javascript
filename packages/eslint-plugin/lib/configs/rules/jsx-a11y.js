@@ -10,6 +10,14 @@ module.exports = {
 		area: [],
 		'input[type="image"]': [],
 	} ],
+	
+	// Enforce all anchors are valid, navigable elements.
+	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+	'jsx-a11y/anchor-is-valid': [ 'error', {
+		components: [ 'Link' ],
+		specialLink: [ 'to' ],
+		aspects: [ 'noHref', 'invalidHref', 'preferButton' ],
+	} ],
 
 	// Require ARIA roles to be valid and non-abstract
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md

@@ -1,4 +1,5 @@
 # Next
+- Added `jsx-quotes` to base config
 - Added `jsx-a11y/anchor-is-valid` to enforce all anchors to be valid, navigable elements.
 
 # 0.0.3

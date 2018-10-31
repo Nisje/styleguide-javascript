@@ -12,7 +12,9 @@ module.exports = {
 		require( './rules/best-practices' ),
 		require( './rules/esnext' ),
 		require( './rules/jsx-a11y' ),
+		require( './rules/possible-errors' ),
 		require( './rules/react' ),
 		require( './rules/stylistic-issues' ),
+		require( './rules/variables' ),
 	),
 };

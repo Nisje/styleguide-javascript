@@ -1,4 +1,6 @@
 # Next
+- Added `comma-style` to enforce consistent comma style
+- Added `comma-dangle` to require trailing commas
 - Added `jsx-quotes` to base config
 - Added `jsx-a11y/anchor-is-valid` to enforce all anchors to be valid, navigable elements.
 

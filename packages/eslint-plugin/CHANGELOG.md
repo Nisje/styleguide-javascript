@@ -1,8 +1,9 @@
-# Next
-- Added `comma-style` to enforce consistent comma style
+# 0.0.4
 - Added `comma-dangle` to require trailing commas
-- Added `jsx-quotes` to base config
+- Added `comma-style` to enforce consistent comma style
 - Added `jsx-a11y/anchor-is-valid` to enforce all anchors to be valid, navigable elements.
+- Added `jsx-quotes` to base config
+- Added `radix` to enforce the consistent use of the radix argument when using parseInt()
 
 # 0.0.3
 - Added rules to follow our guides related to strings.

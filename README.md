@@ -232,8 +232,23 @@ Other Style Guides
 
 ## Whitespace
 
-  <a name="whitespace--comma-spacing"></a>
-  - [3.1](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+  <a name="whitespace--spaces"></a><a name="3.1"></a>
+  - [3.1](#whitespace--spaces) Use tabs. eslint: [`indent`](https://eslint.org/docs/rules/indent)
+
+    ```javascript
+    // bad
+    function foo() {
+    ∙∙∙∙let name;
+    }
+
+    // good
+    function foo() {
+    »   let name;
+    }
+    ```
+
+  <a name="whitespace--comma-spacing"></a><a name="3.2"></a>
+  - [3.2](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
     ```javascript
     // bad

@@ -30,6 +30,10 @@ module.exports = {
 		allowBind: false,
 		ignoreDOMComponents: true,
 	} ],
+	
+	// Prevent duplicate properties in JSX
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
+	'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
 
 	// Disallow multiple spaces between inline JSX props
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md

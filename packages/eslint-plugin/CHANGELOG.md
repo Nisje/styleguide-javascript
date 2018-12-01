@@ -1,6 +1,7 @@
 # Next
 - Added `comma-spacing` to enforce consistent spacing before and after commas
 - Added `indent` to enforce consistent indentation
+- Added `react/jsx-no-duplicate-props` to prevent duplicate properties in JSX
 
 # 0.0.4
 - Added `comma-dangle` to require trailing commas

@@ -20,6 +20,10 @@ module.exports = {
 	// Validate closing tag location in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
 	'react/jsx-closing-tag-location': 'error',
+	
+	// Validate JSX indentation
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
+	'react/jsx-indent': [ 'error', 'tab' ],
 
 	// Prevent usage of .bind() in JSX props
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md

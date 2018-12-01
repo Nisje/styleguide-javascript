@@ -1,3 +1,6 @@
+# Next
+- Added `comma-spacing` to enforce consistent spacing before and after commas
+
 # 0.0.4
 - Added `comma-dangle` to require trailing commas
 - Added `comma-style` to enforce consistent comma style

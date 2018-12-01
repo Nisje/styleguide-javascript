@@ -11,6 +11,13 @@ module.exports = {
 		functions: 'always-multiline',
 	} ],
 	
+	// Enforce consistent spacing before and after commas
+	// https://eslint.org/docs/rules/comma-spacing
+	'comma-spacing': [ 'error', {
+		before: false,
+		after: true,
+	} ],
+	
 	// Enforce consistent comma style
 	// https://eslint.org/docs/rules/comma-style
 	'comma-style': [ 'error', 'last', {

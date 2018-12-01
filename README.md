@@ -10,6 +10,7 @@ Other Style Guides
 
   1. [Strings](#strings)
   1. [Commas](#commas)
+  1. [Whitespace](#whitespace)
 
 ## Strings
 
@@ -225,6 +226,23 @@ Other Style Guides
       inventorOf,
       ...heroArgs
     );
+    ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Whitespace
+
+  <a name="whitespace--comma-spacing"></a>
+  - [3.1](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+
+    ```javascript
+    // bad
+    var foo = 1,bar = 2;
+    var arr = [ 1 , 2 ];
+
+    // good
+    var foo = 1, bar = 2;
+    var arr = [ 1, 2 ];
     ```
 
 **[⬆ back to top](#table-of-contents)**

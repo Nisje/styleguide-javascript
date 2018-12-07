@@ -1,11 +1,12 @@
 # Next
-- Added `eol-last` to require newline at the end of files
-- Added `space-infix-ops` to require spacing around infix operators
-- Added `keyword-spacing` to enforce consistent spacing before and after keywords
-- Added `space-before-blocks` to enforce consistent spacing before blocks
 - Added `comma-spacing` to enforce consistent spacing before and after commas
+- Added `eol-last` to require newline at the end of files
 - Added `indent`/`react/jsx-indent` to enforce consistent indentation
+- Added `keyword-spacing` to enforce consistent spacing before and after keywords
+- Added `no-useless-return` to disallow redundant return statements
 - Added `react/jsx-no-duplicate-props` to prevent duplicate properties in JSX
+- Added `space-before-blocks` to enforce consistent spacing before blocks
+- Added `space-infix-ops` to require spacing around infix operators
 
 # 0.0.4
 - Added `comma-dangle` to require trailing commas

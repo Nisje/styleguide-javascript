@@ -18,6 +18,10 @@ module.exports = {
 	// Disallow unnecessary escape characters
 	// https://eslint.org/docs/rules/no-useless-escape
 	'no-useless-escape': 'error',
+	
+	// Disallow redundant return statements
+	// https://eslint.org/docs/rules/no-useless-return
+	'no-useless-return': 'error',
 
 	// Enforce the consistent use of the radix argument when using parseInt()
 	// https://eslint.org/docs/rules/radix

@@ -299,8 +299,19 @@ Other Style Guides
     }
     ```
 
-  <a name="whitespace--comma-spacing"></a><a name="3.4"></a>
-  - [3.4](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+  <a name="whitespace--infix-ops"></a><a name="3.4"></a>
+  - [3.4](#whitespace--infix-ops) Set off operators with spaces. eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops.html)
+
+    ```javascript
+    // bad
+    const x=y+5;
+
+    // good
+    const x = y + 5;
+    ```
+
+  <a name="whitespace--comma-spacing"></a><a name="3.5"></a>
+  - [3.5](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
     ```javascript
     // bad

@@ -63,4 +63,8 @@ module.exports = {
 	// Enforce consistent spacing before blocks
 	// https://eslint.org/docs/rules/space-before-blocks
 	'space-before-blocks': 'error',
+
+	// Require spacing around infix operators
+	// https://eslint.org/docs/rules/space-infix-ops
+	'space-infix-ops': 'error',
 };

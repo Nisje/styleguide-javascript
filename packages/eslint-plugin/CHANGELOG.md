@@ -1,4 +1,5 @@
 # Next
+- Added `space-infix-ops` to require spacing around infix operators
 - Added `keyword-spacing` to enforce consistent spacing before and after keywords
 - Added `space-before-blocks` to enforce consistent spacing before blocks
 - Added `comma-spacing` to enforce consistent spacing before and after commas

@@ -44,6 +44,18 @@ module.exports = {
 	// https://eslint.org/docs/rules/jsx-quotes
 	'jsx-quotes': [ 'error', 'prefer-double' ],
 	
+	// Enforce consistent spacing before and after keywords
+	// https://eslint.org/docs/rules/keyword-spacing
+	'keyword-spacing': [ 'error', {
+		before: true,
+		after: true,
+		overrides: {
+			return: { after: true },
+			throw: { after: true },
+			case: { after: true }
+		}
+	} ],
+
 	// Enforce the consistent use of either backticks, double, or single quotes
 	// https://eslint.org/docs/rules/quotes
 	quotes: [ 'error', 'single', { avoidEscape: true } ],

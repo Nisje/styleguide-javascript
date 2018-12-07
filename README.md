@@ -273,9 +273,34 @@ Other Style Guides
       breed: 'Bernese Mountain Dog',
     } );
     ```
+    
+<a name="whitespace--around-keywords"></a><a name="3.3"></a>
+  - [3.3](#whitespace--around-keywords) Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space between the argument list and the function name in function calls and declarations. eslint: [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
 
-  <a name="whitespace--comma-spacing"></a><a name="3.3"></a>
-  - [3.3](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+    ```javascript
+    // bad
+    if( isJedi ) {
+      fight ();
+    }
+
+    // good
+    if ( isJedi ) {
+      fight();
+    }
+
+    // bad
+    function fight () {
+      console.log ( 'Swooosh!' );
+    }
+
+    // good
+    function fight() {
+      console.log( 'Swooosh!' );
+    }
+    ```
+
+  <a name="whitespace--comma-spacing"></a><a name="3.4"></a>
+  - [3.4](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
     ```javascript
     // bad

@@ -300,7 +300,7 @@ Other Style Guides
     ```
 
   <a name="whitespace--infix-ops"></a><a name="3.4"></a>
-  - [3.4](#whitespace--infix-ops) Set off operators with spaces. eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops.html)
+  - [3.4](#whitespace--infix-ops) Set off operators with spaces. eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops)
 
     ```javascript
     // bad
@@ -310,17 +310,42 @@ Other Style Guides
     const x = y + 5;
     ```
 
-  <a name="whitespace--comma-spacing"></a><a name="3.5"></a>
-  - [3.5](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+  <a name="whitespace--newline-at-end"></a><a name="3.5"></a>
+  - [3.5](#whitespace--newline-at-end) End files with a single newline character. eslint: [`eol-last`](https://eslint.org/docs/rules/eol-last)
 
     ```javascript
     // bad
-    var foo = 1,bar = 2;
-    var arr = [ 1 , 2 ];
+    import { es6 } from './styleguide';
+      // ...
+    export default es6;
+    ```
+
+    ```javascript
+    // bad
+    import { es6 } from './styleguide';
+      // ...
+    export default es6;↵
+    ↵
+    ```
+
+    ```javascript
+    // good
+    import { es6 } from './styleguide';
+      // ...
+    export default es6;↵
+    ```
+
+  <a name="whitespace--comma-spacing"></a><a name="3.6"></a>
+  - [3.6](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+
+    ```javascript
+    // bad
+    const foo = 1,bar = 2;
+    const arr = [ 1 , 2 ];
 
     // good
-    var foo = 1, bar = 2;
-    var arr = [ 1, 2 ];
+    const foo = 1, bar = 2;
+    const arr = [ 1, 2 ];
     ```
 
 **[⬆ back to top](#table-of-contents)**

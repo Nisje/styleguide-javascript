@@ -1,4 +1,5 @@
 # Next
+- Added `eol-last` to require newline at the end of files
 - Added `space-infix-ops` to require spacing around infix operators
 - Added `keyword-spacing` to enforce consistent spacing before and after keywords
 - Added `space-before-blocks` to enforce consistent spacing before blocks

@@ -36,6 +36,10 @@ module.exports = {
 		}
 	} ],
 	
+	// Require or disallow newline at the end of files
+	// https://eslint.org/docs/rules/eol-last
+	'eol-last': [ 'error', 'always' ],
+
 	// Enforce consistent indentation
 	// https://eslint.org/docs/rules/indent
 	indent: [ 'error', 'tab', { SwitchCase: 1 } ],

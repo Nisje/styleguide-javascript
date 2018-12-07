@@ -1,4 +1,5 @@
 # Next
+- Added `space-before-blocks` to enforce consistent spacing before blocks
 - Added `comma-spacing` to enforce consistent spacing before and after commas
 - Added `indent`/`react/jsx-indent` to enforce consistent indentation
 - Added `react/jsx-no-duplicate-props` to prevent duplicate properties in JSX

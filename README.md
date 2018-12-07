@@ -247,8 +247,35 @@ Other Style Guides
     }
     ```
 
-  <a name="whitespace--comma-spacing"></a><a name="3.2"></a>
-  - [3.2](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+  <a name="whitespace--before-blocks"></a><a name="3.2"></a>
+  - [3.2](#whitespace--before-blocks) Place 1 space before the leading brace. eslint: [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks)
+
+    ```javascript
+    // bad
+    function test(){
+      console.log( 'test' );
+    }
+
+    // good
+    function test() {
+      console.log( 'test' );
+    }
+
+    // bad
+    dog.set( 'attr',{
+      age: '1 year',
+      breed: 'Bernese Mountain Dog',
+    } );
+
+    // good
+    dog.set( 'attr', {
+      age: '1 year',
+      breed: 'Bernese Mountain Dog',
+    } );
+    ```
+
+  <a name="whitespace--comma-spacing"></a><a name="3.3"></a>
+  - [3.3](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
     ```javascript
     // bad

@@ -47,4 +47,8 @@ module.exports = {
 	// Enforce the consistent use of either backticks, double, or single quotes
 	// https://eslint.org/docs/rules/quotes
 	quotes: [ 'error', 'single', { avoidEscape: true } ],
+
+	// Enforce consistent spacing before blocks
+	// https://eslint.org/docs/rules/space-before-blocks
+	'space-before-blocks': 'error',
 };

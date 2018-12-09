@@ -5,6 +5,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-eval
 	'no-eval': 'error',
 	
+	// Disallow extending native types
+	// https://eslint.org/docs/rules/no-extend-native
+	'no-extend-native': 'error',
+	
 	// Disallow multiple spaces
 	// https://eslint.org/docs/rules/no-multi-spaces
 	'no-multi-spaces': [ 'error', {

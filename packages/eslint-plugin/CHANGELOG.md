@@ -1,4 +1,7 @@
 # Next
+- Added `no-extend-native` to disallow extending native types
+
+# 0.0.5
 - Added `comma-spacing` to enforce consistent spacing before and after commas
 - Added `eol-last` to require newline at the end of files
 - Added `indent`/`react/jsx-indent` to enforce consistent indentation

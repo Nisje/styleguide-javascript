@@ -26,6 +26,10 @@ module.exports = {
 	// Disallow redundant return statements
 	// https://eslint.org/docs/rules/no-useless-return
 	'no-useless-return': 'error',
+	
+	// Disallow `void` operators
+	// https://eslint.org/docs/rules/no-void
+	'no-void': 'error',
 
 	// Enforce the consistent use of the radix argument when using parseInt()
 	// https://eslint.org/docs/rules/radix

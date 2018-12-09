@@ -1,4 +1,5 @@
 # Next
+- Added `no-void` to disallow `void` operators
 - Added `no-extend-native` to disallow extending native types
 
 # 0.0.5

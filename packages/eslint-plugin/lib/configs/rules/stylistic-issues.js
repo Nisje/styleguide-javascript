@@ -10,14 +10,14 @@ module.exports = {
 		exports: 'always-multiline',
 		functions: 'always-multiline',
 	} ],
-	
+
 	// Enforce consistent spacing before and after commas
 	// https://eslint.org/docs/rules/comma-spacing
 	'comma-spacing': [ 'error', {
 		before: false,
 		after: true,
 	} ],
-	
+
 	// Enforce consistent comma style
 	// https://eslint.org/docs/rules/comma-style
 	'comma-style': [ 'error', 'last', {
@@ -35,7 +35,7 @@ module.exports = {
 			NewExpression: false,
 		}
 	} ],
-	
+
 	// Require or disallow newline at the end of files
 	// https://eslint.org/docs/rules/eol-last
 	'eol-last': [ 'error', 'always' ],
@@ -43,11 +43,11 @@ module.exports = {
 	// Enforce consistent indentation
 	// https://eslint.org/docs/rules/indent
 	indent: [ 'error', 'tab', { SwitchCase: 1 } ],
-	
+
 	// Specify whether double or single quotes should be used in JSX attributes
 	// https://eslint.org/docs/rules/jsx-quotes
 	'jsx-quotes': [ 'error', 'prefer-double' ],
-	
+
 	// Enforce consistent spacing before and after keywords
 	// https://eslint.org/docs/rules/keyword-spacing
 	'keyword-spacing': [ 'error', {
@@ -59,6 +59,14 @@ module.exports = {
 			case: { after: true }
 		}
 	} ],
+
+	// Disallow `Array` constructors
+	// https://eslint.org/docs/rules/no-array-constructor
+	'no-array-constructor': 'error',
+
+	// Disallow `Object` constructors
+	// https://eslint.org/docs/rules/no-new-object
+	'no-new-object': 'error',
 
 	// Enforce the consistent use of either backticks, double, or single quotes
 	// https://eslint.org/docs/rules/quotes

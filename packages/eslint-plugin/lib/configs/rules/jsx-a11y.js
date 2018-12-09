@@ -10,7 +10,7 @@ module.exports = {
 		area: [],
 		'input[type="image"]': [],
 	} ],
-	
+
 	// Enforce all anchors are valid, navigable elements.
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
 	'jsx-a11y/anchor-is-valid': [ 'error', {

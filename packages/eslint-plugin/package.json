@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Nisje's ESLint plugin, following our styleguide",
   "license": "MIT",
   "repository": {
@@ -24,7 +24,7 @@
     "eslint": "^5.6.0"
   },
   "devDependencies": {
-    "eslint": "5.8.0",
+    "eslint": "5.10.0",
     "eslint-find-rules": "3.3.1"
   },
   "dependencies": {

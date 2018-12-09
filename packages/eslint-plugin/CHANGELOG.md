@@ -1,4 +1,4 @@
-# Next
+# 0.0.6
 - Added `prefer-const`, `no-const-assign`, `no-var`, `no-new-object`, `no-array-constructor`
 - Added `no-void` to disallow `void` operators
 - Added `no-extend-native` to disallow extending native types

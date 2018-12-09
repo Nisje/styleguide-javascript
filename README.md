@@ -9,6 +9,7 @@ Other Style Guides
 ## Table of Contents
 
   1. [Strings](#strings)
+  1. [References](#references)
   1. [Commas](#commas)
   1. [Whitespace](#whitespace)
 
@@ -95,10 +96,61 @@ Other Style Guides
 
 **[⬆ back to top](#table-of-contents)**
 
+## References
+
+  <a name="references--prefer-const"></a><a name="2.1"></a>
+  - [2.1](#references--prefer-const) Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign)
+
+    > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+
+    ```javascript
+    // bad
+    var a = 1;
+    var b = 2;
+
+    // good
+    const a = 1;
+    const b = 2;
+    ```
+
+  <a name="references--disallow-var"></a><a name="2.2"></a>
+  - [2.2](#references--disallow-var) If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](https://eslint.org/docs/rules/no-var)
+
+    > Why? `let` is block-scoped rather than function-scoped like `var`.
+
+    ```javascript
+    // bad
+    var count = 1;
+    if ( true ) {
+      count += 1;
+    }
+
+    // good, use the let.
+    let count = 1;
+    if ( true ) {
+      count += 1;
+    }
+    ```
+
+  <a name="references--block-scope"></a><a name="2.3"></a>
+  - [2.3](#references--block-scope) Note that both `let` and `const` are block-scoped.
+
+    ```javascript
+    // const and let only exist in the blocks they are defined in.
+    {
+      let a = 1;
+      const b = 1;
+    }
+    console.log( a ); // ReferenceError
+    console.log( b ); // ReferenceError
+    ```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Commas
 
-  <a name="commas--leading-trailing"></a><a name="2.1"></a>
-  - [2.1](#commas--leading-trailing) Leading commas: **Nope.** eslint: [`comma-style`](https://eslint.org/docs/rules/comma-style.html)
+  <a name="commas--leading-trailing"></a><a name="3.1"></a>
+  - [3.1](#commas--leading-trailing) Leading commas: **Nope.** eslint: [`comma-style`](https://eslint.org/docs/rules/comma-style.html)
 
     ```javascript
     // bad
@@ -132,8 +184,8 @@ Other Style Guides
     };
     ```
 
-  <a name="commas--dangling"></a><a name="2.2"></a>
-  - [2.2](#commas--dangling) Additional trailing comma: **Yup.** eslint: [`comma-dangle`](https://eslint.org/docs/rules/comma-dangle.html)
+  <a name="commas--dangling"></a><a name="3.2"></a>
+  - [3.2](#commas--dangling) Additional trailing comma: **Yup.** eslint: [`comma-dangle`](https://eslint.org/docs/rules/comma-dangle.html)
 
     > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don’t have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
 
@@ -232,8 +284,8 @@ Other Style Guides
 
 ## Whitespace
 
-  <a name="whitespace--spaces"></a><a name="3.1"></a>
-  - [3.1](#whitespace--spaces) Use tabs. eslint: [`indent`](https://eslint.org/docs/rules/indent)
+  <a name="whitespace--spaces"></a><a name="4.1"></a>
+  - [4.1](#whitespace--spaces) Use tabs. eslint: [`indent`](https://eslint.org/docs/rules/indent)
 
     ```javascript
     // bad
@@ -247,8 +299,8 @@ Other Style Guides
     }
     ```
 
-  <a name="whitespace--before-blocks"></a><a name="3.2"></a>
-  - [3.2](#whitespace--before-blocks) Place 1 space before the leading brace. eslint: [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks)
+  <a name="whitespace--before-blocks"></a><a name="4.2"></a>
+  - [4.2](#whitespace--before-blocks) Place 1 space before the leading brace. eslint: [`space-before-blocks`](https://eslint.org/docs/rules/space-before-blocks)
 
     ```javascript
     // bad
@@ -274,8 +326,8 @@ Other Style Guides
     } );
     ```
     
-<a name="whitespace--around-keywords"></a><a name="3.3"></a>
-  - [3.3](#whitespace--around-keywords) Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space between the argument list and the function name in function calls and declarations. eslint: [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
+<a name="whitespace--around-keywords"></a><a name="4.3"></a>
+  - [4.3](#whitespace--around-keywords) Place 1 space before the opening parenthesis in control statements (`if`, `while` etc.). Place no space between the argument list and the function name in function calls and declarations. eslint: [`keyword-spacing`](https://eslint.org/docs/rules/keyword-spacing)
 
     ```javascript
     // bad
@@ -299,8 +351,8 @@ Other Style Guides
     }
     ```
 
-  <a name="whitespace--infix-ops"></a><a name="3.4"></a>
-  - [3.4](#whitespace--infix-ops) Set off operators with spaces. eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops)
+  <a name="whitespace--infix-ops"></a><a name="4.4"></a>
+  - [4.4](#whitespace--infix-ops) Set off operators with spaces. eslint: [`space-infix-ops`](https://eslint.org/docs/rules/space-infix-ops)
 
     ```javascript
     // bad
@@ -310,8 +362,8 @@ Other Style Guides
     const x = y + 5;
     ```
 
-  <a name="whitespace--newline-at-end"></a><a name="3.5"></a>
-  - [3.5](#whitespace--newline-at-end) End files with a single newline character. eslint: [`eol-last`](https://eslint.org/docs/rules/eol-last)
+  <a name="whitespace--newline-at-end"></a><a name="4.5"></a>
+  - [4.5](#whitespace--newline-at-end) End files with a single newline character. eslint: [`eol-last`](https://eslint.org/docs/rules/eol-last)
 
     ```javascript
     // bad
@@ -335,8 +387,8 @@ Other Style Guides
     export default es6;↵
     ```
 
-  <a name="whitespace--comma-spacing"></a><a name="3.6"></a>
-  - [3.6](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
+  <a name="whitespace--comma-spacing"></a><a name="4.6"></a>
+  - [4.6](#whitespace--comma-spacing) Avoid spaces before commas and require a space after commas. eslint: [`comma-spacing`](https://eslint.org/docs/rules/comma-spacing)
 
     ```javascript
     // bad

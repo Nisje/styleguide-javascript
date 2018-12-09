@@ -1,4 +1,5 @@
 # Next
+- Added `prefer-const`, `no-const-assign`, `no-var`
 - Added `no-void` to disallow `void` operators
 - Added `no-extend-native` to disallow extending native types
 

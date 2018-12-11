@@ -68,6 +68,14 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-new-object
 	'no-new-object': 'error',
 
+	// Require quotes around object literal property names
+	// https://eslint.org/docs/rules/quote-props
+	'quote-props': [ 'error', 'as-needed', {
+		keywords: false,
+		unnecessary: true,
+		numbers: false,
+	} ],
+
 	// Enforce the consistent use of either backticks, double, or single quotes
 	// https://eslint.org/docs/rules/quotes
 	quotes: [ 'error', 'single', { avoidEscape: true } ],

@@ -9,6 +9,13 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-var
 	'no-var': 'error',
 
+	// Require or disallow method and property shorthand syntax for object literals
+	// https://eslint.org/docs/rules/object-shorthand
+	'object-shorthand': [ 'error', 'always', {
+		ignoreConstructors: false,
+		avoidQuotes: true,
+	} ],
+
 	// Require `const` declarations for variables that are never reassigned after declared
 	// https://eslint.org/docs/rules/prefer-const
 	'prefer-const': [ 'error', {

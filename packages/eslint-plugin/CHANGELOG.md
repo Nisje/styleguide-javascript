@@ -1,3 +1,6 @@
+# Next
+- Added `quote-props`, `object-shorthand`, `no-prototype-builtins`
+
 # 0.0.6
 - Added `prefer-const`, `no-const-assign`, `no-var`, `no-new-object`, `no-array-constructor`
 - Added `no-void` to disallow `void` operators

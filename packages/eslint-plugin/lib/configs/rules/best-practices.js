@@ -1,6 +1,12 @@
 // https://eslint.org/docs/rules/#best-practices
 
 module.exports = {
+	// Enforce `return` statements in callbacks of array methods
+	// https://eslint.org/docs/rules/array-callback-return
+	'array-callback-return': [ 'error', {
+		allowImplicit: true,
+	} ],
+
 	// Disallow the use of eval()
 	// https://eslint.org/docs/rules/no-eval
 	'no-eval': 'error',

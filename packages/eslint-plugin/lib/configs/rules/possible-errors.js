@@ -5,6 +5,12 @@ module.exports = {
 	// https://eslint.org/docs/rules/for-direction
 	'for-direction': 'error',
 
+	// Enforce `return` statements in getters
+	// https://eslint.org/docs/rules/getter-return
+	'getter-return': [ 'error', {
+		allowImplicit: true,
+	} ],
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

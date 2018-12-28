@@ -94,4 +94,8 @@ module.exports = {
 	// Disallow multiple spaces in regular expressions
 	// https://eslint.org/docs/rules/no-regex-spaces
 	'no-regex-spaces': 'error',
+
+	// Disallow sparse arrays
+	// https://eslint.org/docs/rules/no-sparse-arrays
+	'no-sparse-arrays': 'error',
 };

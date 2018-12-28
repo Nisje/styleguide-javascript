@@ -1,5 +1,5 @@
 # Next
-- Added `quote-props`, `object-shorthand`, `no-prototype-builtins`, `array-callback-return`, `constructor-super`, `for-direction`, `getter-return`, `no-case-declarations`, `no-class-assign`
+- Added `quote-props`, `object-shorthand`, `no-prototype-builtins`, `array-callback-return`, `constructor-super`, `for-direction`, `getter-return`, `no-case-declarations`, `no-class-assign`, `no-compare-neg-zero`
 
 # 0.0.6
 - Added `prefer-const`, `no-const-assign`, `no-var`, `no-new-object`, `no-array-constructor`

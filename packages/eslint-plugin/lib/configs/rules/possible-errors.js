@@ -11,6 +11,10 @@ module.exports = {
 		allowImplicit: true,
 	} ],
 
+	// Disallow comparing against -0
+	// https://eslint.org/docs/rules/no-compare-neg-zero
+	'no-compare-neg-zero': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

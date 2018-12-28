@@ -98,4 +98,8 @@ module.exports = {
 	// Disallow sparse arrays
 	// https://eslint.org/docs/rules/no-sparse-arrays
 	'no-sparse-arrays': 'error',
+
+	// Disallow confusing multiline expressions
+	// https://eslint.org/docs/rules/no-unexpected-multiline
+	'no-unexpected-multiline': 'error',
 };

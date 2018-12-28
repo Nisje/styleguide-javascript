@@ -31,6 +31,12 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-floating-decimal
 	'no-floating-decimal': 'error',
 
+	// Disallow assignments to native objects or read-only global variables
+	// https://eslint.org/docs/rules/no-global-assign
+	'no-global-assign': [ 'error', {
+		exceptions: [],
+	} ],
+
 	// Disallow multiple spaces
 	// https://eslint.org/docs/rules/no-multi-spaces
 	'no-multi-spaces': [ 'error', {

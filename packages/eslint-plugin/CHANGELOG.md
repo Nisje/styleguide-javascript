@@ -1,5 +1,5 @@
 # Next
-- Added `quote-props`, `object-shorthand`, `no-prototype-builtins`, `array-callback-return`, `constructor-super`, `for-direction`, `getter-return`, `no-case-declarations`, `no-class-assign`, `no-compare-neg-zero`, `no-cond-assign`, `no-console`, `no-constant-condition`, `no-control-regex`, `no-debugger`, `no-delete-var`, `no-dupe-args`, `no-dupe-class-members`, `no-dupe-keys`, `no-duplicate-case`, `no-empty`, `no-empty-character-class`, `no-empty-pattern`, `no-ex-assign`, `no-extra-boolean-cast`, `no-extra-semi`, `no-fallthrough`, `no-floating-decimal`, `no-func-assign`
+- Added `quote-props`, `object-shorthand`, `no-prototype-builtins`, `array-callback-return`, `constructor-super`, `for-direction`, `getter-return`, `no-case-declarations`, `no-class-assign`, `no-compare-neg-zero`, `no-cond-assign`, `no-console`, `no-constant-condition`, `no-control-regex`, `no-debugger`, `no-delete-var`, `no-dupe-args`, `no-dupe-class-members`, `no-dupe-keys`, `no-duplicate-case`, `no-empty`, `no-empty-character-class`, `no-empty-pattern`, `no-ex-assign`, `no-extra-boolean-cast`, `no-extra-semi`, `no-fallthrough`, `no-floating-decimal`, `no-func-assign`, `no-global-assign`
 
 # 0.0.6
 - Added `prefer-const`, `no-const-assign`, `no-var`, `no-new-object`, `no-array-constructor`

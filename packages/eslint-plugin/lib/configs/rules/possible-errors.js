@@ -79,6 +79,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-invalid-regexp
 	'no-invalid-regexp': 'error',
 
+	// Disallow irregular whitespace
+	// https://eslint.org/docs/rules/no-irregular-whitespace
+	'no-irregular-whitespace': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

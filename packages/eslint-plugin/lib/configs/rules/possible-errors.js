@@ -114,4 +114,8 @@ module.exports = {
 	// Disallow negating the left operand of relational operators
 	// https://eslint.org/docs/rules/no-unsafe-negation
 	'no-unsafe-negation': 'error',
+
+	// Require calls to isNaN() when checking for NaN
+	// https://eslint.org/docs/rules/use-isnan
+	'use-isnan': 'error',
 };

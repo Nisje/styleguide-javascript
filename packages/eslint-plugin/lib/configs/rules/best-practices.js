@@ -47,6 +47,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-octal
 	'no-octal': 'error',
 
+	// Disallow variable redeclaration
+	// https://eslint.org/docs/rules/no-redeclare
+	'no-redeclare': 'error',
+
 	// Disallow unnecessary concatenation of literals or template literals
 	// https://eslint.org/docs/rules/no-useless-concat
 	'no-useless-concat': 'error',

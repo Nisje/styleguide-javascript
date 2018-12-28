@@ -7,6 +7,10 @@ module.exports = {
 		allowImplicit: true,
 	} ],
 
+	// Disallow lexical declarations in case clauses
+	// https://eslint.org/docs/rules/no-case-declarations
+	'no-case-declarations': 'error',
+
 	// Disallow the use of eval()
 	// https://eslint.org/docs/rules/no-eval
 	'no-eval': 'error',

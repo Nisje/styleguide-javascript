@@ -90,4 +90,8 @@ module.exports = {
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',
+
+	// Disallow multiple spaces in regular expressions
+	// https://eslint.org/docs/rules/no-regex-spaces
+	'no-regex-spaces': 'error',
 };

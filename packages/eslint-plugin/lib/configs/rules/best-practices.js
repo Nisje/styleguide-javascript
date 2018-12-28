@@ -27,6 +27,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-fallthrough
 	'no-fallthrough': 'error',
 
+	// Disallow leading or trailing decimal points in numeric literals
+	// https://eslint.org/docs/rules/no-floating-decimal
+	'no-floating-decimal': 'error',
+
 	// Disallow multiple spaces
 	// https://eslint.org/docs/rules/no-multi-spaces
 	'no-multi-spaces': [ 'error', {

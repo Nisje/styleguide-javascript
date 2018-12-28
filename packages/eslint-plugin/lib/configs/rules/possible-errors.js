@@ -55,6 +55,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-empty-character-class
 	'no-empty-character-class': 'error',
 
+	// Disallow reassigning exceptions in `catch` clauses
+	// https://eslint.org/docs/rules/no-ex-assign
+	'no-ex-assign': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

@@ -1,6 +1,9 @@
 // https://eslint.org/docs/rules/#ecmascript-6
 
 module.exports = {
+	// Require `super()` calls in constructors
+	'constructor-super': 'error',
+
 	// Disallow reassigning `const` variables
 	// https://eslint.org/docs/rules/no-const-assign
 	'no-const-assign': 'error',

@@ -71,6 +71,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-func-assign
 	'no-func-assign': 'error',
 
+	// Disallow variable or function declarations in nested blocks
+	// https://eslint.org/docs/rules/no-inner-declarations
+	'no-inner-declarations': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

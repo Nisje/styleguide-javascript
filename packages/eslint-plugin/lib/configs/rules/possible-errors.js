@@ -63,6 +63,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-extra-boolean-cast
 	'no-extra-boolean-cast': 'error',
 
+	// Disallow unnecessary semicolons
+	// https://eslint.org/docs/rules/no-extra-semi
+	'no-extra-semi': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

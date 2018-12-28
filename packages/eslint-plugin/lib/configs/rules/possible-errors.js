@@ -110,4 +110,8 @@ module.exports = {
 	// Disallow control flow statements in finally blocks
 	// https://eslint.org/docs/rules/no-unsafe-finally
 	'no-unsafe-finally': 'error',
+
+	// Disallow negating the left operand of relational operators
+	// https://eslint.org/docs/rules/no-unsafe-negation
+	'no-unsafe-negation': 'error',
 };

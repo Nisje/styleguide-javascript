@@ -17,6 +17,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-dupe-class-members
 	'no-dupe-class-members': 'error',
 
+	// Disallow new operators with the Symbol object
+	// https://eslint.org/docs/rules/no-new-symbol
+	'no-new-symbol': 'error',
+
 	// Require `let` or `const` instead of `var`
 	// https://eslint.org/docs/rules/no-var
 	'no-var': 'error',

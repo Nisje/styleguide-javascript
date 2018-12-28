@@ -19,6 +19,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-cond-assign
 	'no-cond-assign': [ 'error', 'always' ],
 
+	// Disallow the use of `console`
+	// https://eslint.org/docs/rules/no-console
+	'no-console': 'warn',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

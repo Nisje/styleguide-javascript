@@ -2,6 +2,7 @@
 
 module.exports = {
 	// Require `super()` calls in constructors
+	// https://eslint.org/docs/rules/constructor-super
 	'constructor-super': 'error',
 
 	// Disallow reassigning `const` variables

@@ -43,6 +43,10 @@ module.exports = {
 		ignoreEOLComments: false,
 	} ],
 
+	// Disallow octal literals
+	// https://eslint.org/docs/rules/no-octal
+	'no-octal': 'error',
+
 	// Disallow unnecessary concatenation of literals or template literals
 	// https://eslint.org/docs/rules/no-useless-concat
 	'no-useless-concat': 'error',

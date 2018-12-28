@@ -67,6 +67,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-extra-semi
 	'no-extra-semi': 'error',
 
+	// Disallow reassigning function declarations
+	// https://eslint.org/docs/rules/no-func-assign
+	'no-func-assign': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

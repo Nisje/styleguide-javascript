@@ -64,6 +64,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-array-constructor
 	'no-array-constructor': 'error',
 
+	// Disallow mixed spaces and tabs for indentation
+	// https://eslint.org/docs/rules/no-mixed-spaces-and-tabs
+	'no-mixed-spaces-and-tabs': 'error',
+
 	// Disallow `Object` constructors
 	// https://eslint.org/docs/rules/no-new-object
 	'no-new-object': 'error',

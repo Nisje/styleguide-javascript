@@ -31,6 +31,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-control-regex
 	'no-control-regex': 'error',
 
+	// Disallow the use of `debugger`
+	// https://eslint.org/docs/rules/no-debugger
+	'no-debugger': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

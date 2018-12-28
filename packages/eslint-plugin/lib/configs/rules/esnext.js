@@ -47,6 +47,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/prefer-template
 	'prefer-template': 'error',
 
+	// Require generator functions to contain yield
+	// https://eslint.org/docs/rules/require-yield
+	'require-yield': 'error',
+
 	// Require or disallow spacing around embedded expressions of template strings
 	// https://eslint.org/docs/rules/template-curly-spacing
 	'template-curly-spacing': [ 'error', 'always' ],

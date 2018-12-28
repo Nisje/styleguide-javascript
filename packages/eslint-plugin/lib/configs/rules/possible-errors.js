@@ -75,6 +75,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-inner-declarations
 	'no-inner-declarations': 'error',
 
+	// Disallow invalid regular expression strings in RegExp constructors
+	// https://eslint.org/docs/rules/no-invalid-regexp
+	'no-invalid-regexp': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

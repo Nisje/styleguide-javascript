@@ -51,6 +51,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-empty
 	'no-empty': 'error',
 
+	// Disallow empty character classes in regular expressions
+	// https://eslint.org/docs/rules/no-empty-character-class
+	'no-empty-character-class': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

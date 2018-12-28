@@ -5,6 +5,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/constructor-super
 	'constructor-super': 'error',
 
+	// Disallow reassigning class members
+	// https://eslint.org/docs/rules/no-class-assign
+	'no-class-assign': 'error',
+
 	// Disallow reassigning `const` variables
 	// https://eslint.org/docs/rules/no-const-assign
 	'no-const-assign': 'error',

@@ -23,6 +23,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-extend-native
 	'no-extend-native': 'error',
 
+	// Disallow fallthrough of `case` statements
+	// https://eslint.org/docs/rules/no-fallthrough
+	'no-fallthrough': 'error',
+
 	// Disallow multiple spaces
 	// https://eslint.org/docs/rules/no-multi-spaces
 	'no-multi-spaces': [ 'error', {

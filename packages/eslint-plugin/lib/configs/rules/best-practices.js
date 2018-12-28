@@ -57,6 +57,10 @@ module.exports = {
 		props: true,
 	} ],
 
+	// Disallow unused labels
+	// https://eslint.org/docs/rules/no-unused-labels
+	'no-unused-labels': 'error',
+
 	// Disallow unnecessary concatenation of literals or template literals
 	// https://eslint.org/docs/rules/no-useless-concat
 	'no-useless-concat': 'error',

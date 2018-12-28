@@ -43,6 +43,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-dupe-keys
 	'no-dupe-keys': 'error',
 
+	// Disallow duplicate case labels
+	// https://eslint.org/docs/rules/no-duplicate-case
+	'no-duplicate-case': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

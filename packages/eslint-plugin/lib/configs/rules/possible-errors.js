@@ -59,6 +59,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-ex-assign
 	'no-ex-assign': 'error',
 
+	// Disallow unnecessary boolean casts
+	// https://eslint.org/docs/rules/no-extra-boolean-cast
+	'no-extra-boolean-cast': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

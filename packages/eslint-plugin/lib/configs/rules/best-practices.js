@@ -51,6 +51,12 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-redeclare
 	'no-redeclare': 'error',
 
+	// Disallow assignments where both sides are exactly the same
+	// https://eslint.org/docs/rules/no-self-assign
+	'no-self-assign': [ 'error', {
+		props: true,
+	} ],
+
 	// Disallow unnecessary concatenation of literals or template literals
 	// https://eslint.org/docs/rules/no-useless-concat
 	'no-useless-concat': 'error',

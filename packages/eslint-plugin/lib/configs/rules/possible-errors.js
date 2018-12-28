@@ -15,6 +15,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-compare-neg-zero
 	'no-compare-neg-zero': 'error',
 
+	// Disallow assignment operators in conditional expressions
+	// https://eslint.org/docs/rules/no-cond-assign
+	'no-cond-assign': [ 'error', 'always' ],
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

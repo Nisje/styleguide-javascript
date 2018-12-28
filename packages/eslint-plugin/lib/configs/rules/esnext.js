@@ -21,6 +21,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-new-symbol
 	'no-new-symbol': 'error',
 
+	// Disallow this/super before calling super() in constructors
+	// https://eslint.org/docs/rules/no-this-before-super
+	'no-this-before-super': 'error',
+
 	// Require `let` or `const` instead of `var`
 	// https://eslint.org/docs/rules/no-var
 	'no-var': 'error',

@@ -106,4 +106,8 @@ module.exports = {
 	// Disallow unreachable code after return, throw, continue, and break statements
 	// https://eslint.org/docs/rules/no-unreachable
 	'no-unreachable': 'error',
+
+	// Disallow control flow statements in finally blocks
+	// https://eslint.org/docs/rules/no-unsafe-finally
+	'no-unsafe-finally': 'error',
 };

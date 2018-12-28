@@ -27,6 +27,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-constant-condition
 	'no-constant-condition': 'warn',
 
+	// Disallow control characters in regular expressions
+	// https://eslint.org/docs/rules/no-control-regex
+	'no-control-regex': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

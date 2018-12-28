@@ -11,6 +11,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-case-declarations
 	'no-case-declarations': 'error',
 
+	// Disallow empty destructuring patterns
+	// https://eslint.org/docs/rules/no-empty-pattern
+	'no-empty-pattern': 'error',
+
 	// Disallow the use of eval()
 	// https://eslint.org/docs/rules/no-eval
 	'no-eval': 'error',

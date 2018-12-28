@@ -47,6 +47,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-duplicate-case
 	'no-duplicate-case': 'error',
 
+	// Disallow empty block statements
+	// https://eslint.org/docs/rules/no-empty
+	'no-empty': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

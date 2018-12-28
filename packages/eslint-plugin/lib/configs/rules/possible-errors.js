@@ -35,6 +35,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-debugger
 	'no-debugger': 'error',
 
+	// Disallow duplicate arguments in `function` definitions
+	// https://eslint.org/docs/rules/no-dupe-args
+	'no-dupe-args': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

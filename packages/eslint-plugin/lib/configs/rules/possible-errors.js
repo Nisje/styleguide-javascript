@@ -83,6 +83,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-irregular-whitespace
 	'no-irregular-whitespace': 'error',
 
+	// Disallow calling global object properties as functions
+	// https://eslint.org/docs/rules/no-obj-calls
+	'no-obj-calls': 'error',
+
 	// Disallow calling some `Object.prototype` methods directly on objects
 	// https://eslint.org/docs/rules/no-prototype-builtins
 	'no-prototype-builtins': 'error',

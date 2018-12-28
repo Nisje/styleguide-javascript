@@ -13,6 +13,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-const-assign
 	'no-const-assign': 'error',
 
+	// Disallow duplicate class members
+	// https://eslint.org/docs/rules/no-dupe-class-members
+	'no-dupe-class-members': 'error',
+
 	// Require `let` or `const` instead of `var`
 	// https://eslint.org/docs/rules/no-var
 	'no-var': 'error',

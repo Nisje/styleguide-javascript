@@ -1,3 +1,6 @@
+# 0.1.1
+- Added Flow ruleset
+
 # 0.1.0
 - Added `quote-props`, `object-shorthand`, `no-prototype-builtins`, `array-callback-return`, `constructor-super`, `for-direction`, `getter-return`, `no-case-declarations`, `no-class-assign`, `no-compare-neg-zero`, `no-cond-assign`, `no-console`, `no-constant-condition`, `no-control-regex`, `no-debugger`, `no-delete-var`, `no-dupe-args`, `no-dupe-class-members`, `no-dupe-keys`, `no-duplicate-case`, `no-empty`, `no-empty-character-class`, `no-empty-pattern`, `no-ex-assign`, `no-extra-boolean-cast`, `no-extra-semi`, `no-fallthrough`, `no-floating-decimal`, `no-func-assign`, `no-global-assign`, `no-inner-declarations`, `no-invalid-regexp`, `no-irregular-whitespace`, `no-mixed-spaces-and-tabs`, `no-new-symbol`, `no-obj-calls`, `no-octal`, `no-redeclare`, `no-regex-spaces`, `no-self-assign`, `no-sparse-arrays`, `no-this-before-super`, `no-undef`, `no-unexpected-multiline`, `no-unreachable`, `no-unsafe-finally`, `no-unsafe-negation`, `no-unused-labels`, `no-unused-vars`, `require-yield`, `use-isnan`, `valid-typeof`
 

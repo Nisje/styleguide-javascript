@@ -44,5 +44,6 @@ You can also stack any of the extra shared configs on top of the "base" config b
 ## Available rulesets
 The following rulesets are available:
 
-*   **react**: Enforces best React.js practices
 *   **base**: Enforces best practices and possible errors
+*   **flowtype**: Enforces best Flow practices
+*   **react**: Enforces best React.js practices

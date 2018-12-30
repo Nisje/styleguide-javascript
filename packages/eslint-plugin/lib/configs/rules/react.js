@@ -27,6 +27,10 @@ module.exports = {
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
 	'react/jsx-closing-tag-location': 'error',
 
+	// Enforce or disallow spaces inside of curly braces in JSX attributes
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
+	'react/jsx-curly-spacing': ['error', 'always' ],
+
 	// Validate JSX indentation
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
 	'react/jsx-indent': [ 'error', 'tab' ],
@@ -105,9 +109,25 @@ module.exports = {
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
 	'react/no-array-index-key': 'error',
 
+	// Prevent usage of dangerous JSX properties
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
+	'react/no-danger': 'error',
+
 	// Prevent problem with children and props.dangerouslySetInnerHTML
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
 	'react/no-danger-with-children': 'error',
+
+	// Prevent usage of deprecated methods, including component lifecyle methods
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
+	'react/no-deprecated': 'error',
+
+	// Prevent usage of setState in componentDidMount
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
+	'react/no-did-mount-set-state': 'error',
+
+	// Prevent usage of setState in componentDidUpdate
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
+	'react/no-did-update-set-state': 'error',
 
 	// Prevent direct mutation of this.state
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
@@ -122,6 +142,10 @@ module.exports = {
 	'react/no-multi-comp': [ 'error', {
 		ignoreStateless: true,
 	} ],
+
+	// Prevent using string references
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
+	'react/no-string-refs': 'error',
 
 	// Require ES6 class declarations over React.createClass
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md

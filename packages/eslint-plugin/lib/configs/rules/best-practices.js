@@ -7,6 +7,10 @@ module.exports = {
 		allowImplicit: true,
 	} ],
 
+	// Enforce consistent brace style for all control statements
+	// https://eslint.org/docs/rules/curly
+	curly: 'error',
+
 	// Require default cases in switch statements
 	// https://eslint.org/docs/rules/default-case
 	'default-case': [ 'error', {
@@ -16,6 +20,12 @@ module.exports = {
 	// Enforce consistent newlines before and after dots
 	// https://eslint.org/docs/rules/dot-location
 	'dot-location': [ 'error', 'property' ],
+
+	// Enforce dot notation whenever possible
+	// https://eslint.org/docs/rules/dot-notation
+	'dot-notation': [ 'error', {
+		allowKeywords: true,
+	} ],
 
 	// Require the use of === and !==
 	// https://eslint.org/docs/rules/eqeqeq
@@ -30,6 +40,12 @@ module.exports = {
 	// Disallow lexical declarations in case clauses
 	// https://eslint.org/docs/rules/no-case-declarations
 	'no-case-declarations': 'error',
+
+	// Disallow else blocks after return statements in if statements
+	// https://eslint.org/docs/rules/no-else-return
+	'no-else-return': [ 'error', {
+		allowElseIf: false,
+	} ],
 
 	// Disallow empty destructuring patterns
 	// https://eslint.org/docs/rules/no-empty-pattern
@@ -97,6 +113,10 @@ module.exports = {
 	// Disallow multiline strings
 	// https://eslint.org/docs/rules/no-multi-str
 	'no-multi-str': 'error',
+
+	// Disallow new operators outside of assignments or comparisons
+	// https://eslint.org/docs/rules/no-new
+	'no-new': 'error',
 
 	// Disallow new operators with the Function object
 	// https://eslint.org/docs/rules/no-new-func

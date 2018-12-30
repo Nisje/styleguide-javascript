@@ -17,6 +17,11 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-dupe-class-members
 	'no-dupe-class-members': 'error',
 
+	// Disallow duplicate module imports
+	// https://eslint.org/docs/rules/no-duplicate-imports
+	// ** Replaced by `import/no-duplicates` **
+	'no-duplicate-imports': 'off',
+
 	// Disallow new operators with the Symbol object
 	// https://eslint.org/docs/rules/no-new-symbol
 	'no-new-symbol': 'error',

@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Nisje's ESLint plugin, following our styleguide",
   "license": "MIT",
   "repository": {
@@ -21,10 +21,10 @@
     "find-rules": "eslint-find-rules lib/configs/all.js -u -n -d"
   },
   "peerDependencies": {
-    "eslint": "^5.6.0"
+    "eslint": "^5.11.0"
   },
   "devDependencies": {
-    "eslint": "5.10.0",
+    "eslint": "5.11.1",
     "eslint-find-rules": "3.3.1"
   },
   "dependencies": {
@@ -33,7 +33,7 @@
     "eslint-plugin-flowtype": "3.2.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.11.1",
+    "eslint-plugin-react": "7.12.0",
     "merge": "1.2.1"
   }
 }

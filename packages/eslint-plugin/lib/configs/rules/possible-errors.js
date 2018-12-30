@@ -99,6 +99,10 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-sparse-arrays
 	'no-sparse-arrays': 'error',
 
+	// Disallow template literal placeholder syntax in regular strings
+	// https://eslint.org/docs/rules/no-template-curly-in-string
+	'no-template-curly-in-string': 'error',
+
 	// Disallow confusing multiline expressions
 	// https://eslint.org/docs/rules/no-unexpected-multiline
 	'no-unexpected-multiline': 'error',

@@ -25,6 +25,22 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-this-before-super
 	'no-this-before-super': 'error',
 
+	// Disallow unnecessary computed property keys in object literals
+	// https://eslint.org/docs/rules/no-useless-computed-key
+	'no-useless-computed-key': 'error',
+
+	// Disallow unnecessary constructors
+	// https://eslint.org/docs/rules/no-useless-constructor
+	'no-useless-constructor': 'error',
+
+	// Disallow renaming import, export, and destructured assignments to the same name
+	// https://eslint.org/docs/rules/no-useless-rename
+	'no-useless-rename': [ 'error', {
+		ignoreDestructuring: false,
+		ignoreImport: false,
+		ignoreExport: false,
+	} ],
+
 	// Require `let` or `const` instead of `var`
 	// https://eslint.org/docs/rules/no-var
 	'no-var': 'error',
@@ -46,6 +62,10 @@ module.exports = {
 	// Require template literals instead of string concatenation
 	// https://eslint.org/docs/rules/prefer-template
 	'prefer-template': 'error',
+
+	// Enforce spacing between rest and spread operators and their expressions
+	// https://eslint.org/docs/rules/rest-spread-spacing
+	'rest-spread-spacing': [ 'error', 'never' ],
 
 	// Require generator functions to contain yield
 	// https://eslint.org/docs/rules/require-yield

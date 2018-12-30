@@ -60,9 +60,34 @@ module.exports = {
 		}
 	} ],
 
+	// Require parentheses when invoking a constructor with no arguments
+	// https://eslint.org/docs/rules/new-parens
+	'new-parens': 'error',
+
 	// Disallow `Array` constructors
 	// https://eslint.org/docs/rules/no-array-constructor
 	'no-array-constructor': 'error',
+
+	// Disallow mixed binary operators
+	// https://eslint.org/docs/rules/no-mixed-operators
+	'no-mixed-operators': [ 'error', {
+		groups: [
+			[ '%', '**' ],
+			[ '%', '+' ],
+			[ '%', '-' ],
+			[ '%', '*' ],
+			[ '%', '/' ],
+			[ '**', '+' ],
+			[ '**', '-' ],
+			[ '**', '*' ],
+			[ '**', '/' ],
+			[ '&', '|', '^', '~', '<<', '>>', '>>>' ],
+			[ '==', '!=', '===', '!==', '>', '>=', '<', '<=' ],
+			[ '&&', '||' ],
+			[ 'in', 'instanceof' ]
+		],
+		allowSamePrecedence: false,
+	} ],
 
 	// Disallow mixed spaces and tabs for indentation
 	// https://eslint.org/docs/rules/no-mixed-spaces-and-tabs
@@ -71,6 +96,24 @@ module.exports = {
 	// Disallow `Object` constructors
 	// https://eslint.org/docs/rules/no-new-object
 	'no-new-object': 'error',
+
+	// Disallow specified syntax
+	// https://eslint.org/docs/rules/no-restricted-syntax
+	'no-restricted-syntax': [ 'error', {
+			selector: 'ForInStatement',
+			message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+		}, {
+			selector: 'LabeledStatement',
+			message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+		}, {
+			selector: 'WithStatement',
+			message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+		}
+	],
+
+	// Disallow whitespace before properties
+	// https://eslint.org/docs/rules/no-whitespace-before-property
+	'no-whitespace-before-property': 'error',
 
 	// Require quotes around object literal property names
 	// https://eslint.org/docs/rules/quote-props
@@ -91,4 +134,8 @@ module.exports = {
 	// Require spacing around infix operators
 	// https://eslint.org/docs/rules/space-infix-ops
 	'space-infix-ops': 'error',
+
+	// Require or disallow Unicode byte order mark (BOM)
+	// https://eslint.org/docs/rules/unicode-bom
+	'unicode-bom': [ 'error', 'never' ],
 };

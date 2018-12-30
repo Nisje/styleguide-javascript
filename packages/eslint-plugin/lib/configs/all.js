@@ -6,6 +6,7 @@ const merge = require( 'merge' );
 module.exports = {
 	plugins: [
 		'flowtype',
+		'import',
 		'jsx-a11y',
 		'react',
 	],
@@ -13,9 +14,11 @@ module.exports = {
 		require( './rules/best-practices' ),
 		require( './rules/esnext' ),
 		require( './rules/flowtype' ),
+		require( './rules/import' ),
 		require( './rules/jsx-a11y' ),
 		require( './rules/possible-errors' ),
 		require( './rules/react' ),
+		require( './rules/strict' ),
 		require( './rules/stylistic-issues' ),
 		require( './rules/variables' ),
 	),

@@ -7,6 +7,26 @@ module.exports = {
 		allowImplicit: true,
 	} ],
 
+	// Require default cases in switch statements
+	// https://eslint.org/docs/rules/default-case
+	'default-case': [ 'error', {
+		commentPattern: '^no default$',
+	} ],
+
+	// Enforce consistent newlines before and after dots
+	// https://eslint.org/docs/rules/dot-location
+	'dot-location': [ 'error', 'property' ],
+
+	// Require the use of === and !==
+	// https://eslint.org/docs/rules/eqeqeq
+	eqeqeq: [ 'error', 'always', {
+		null: 'ignore',
+	} ],
+
+	// Disallow the use of arguments.caller or arguments.callee
+	// https://eslint.org/docs/rules/no-caller
+	'no-caller': 'error',
+
 	// Disallow lexical declarations in case clauses
 	// https://eslint.org/docs/rules/no-case-declarations
 	'no-case-declarations': 'error',
@@ -23,6 +43,14 @@ module.exports = {
 	// https://eslint.org/docs/rules/no-extend-native
 	'no-extend-native': 'error',
 
+	// Disallow unnecessary calls to .bind()
+	// https://eslint.org/docs/rules/no-extra-bind
+	'no-extra-bind': 'error',
+
+	// Disallow unnecessary labels
+	// https://eslint.org/docs/rules/no-extra-label
+	'no-extra-label': 'error',
+
 	// Disallow fallthrough of `case` statements
 	// https://eslint.org/docs/rules/no-fallthrough
 	'no-fallthrough': 'error',
@@ -37,24 +65,138 @@ module.exports = {
 		exceptions: [],
 	} ],
 
+	// Disallow the use of eval()-like methods
+	// https://eslint.org/docs/rules/no-implied-eval
+	'no-implied-eval': 'error',
+
+	// Disallow the use of the __iterator__ property
+	// https://eslint.org/docs/rules/no-iterator
+	'no-iterator': 'error',
+
+	// Disallow labeled statements
+	// https://eslint.org/docs/rules/no-labels
+	'no-labels': [ 'error', {
+		allowLoop: false,
+		allowSwitch: false,
+	} ],
+
+	// Disallow unnecessary nested blocks
+	// https://eslint.org/docs/rules/no-lone-blocks
+	'no-lone-blocks': 'error',
+
+	// Disallow function declarations and expressions inside loop statements
+	// https://eslint.org/docs/rules/no-loop-func
+	'no-loop-func': 'error',
+
 	// Disallow multiple spaces
 	// https://eslint.org/docs/rules/no-multi-spaces
 	'no-multi-spaces': [ 'error', {
 		ignoreEOLComments: false,
 	} ],
 
+	// Disallow multiline strings
+	// https://eslint.org/docs/rules/no-multi-str
+	'no-multi-str': 'error',
+
+	// Disallow new operators with the Function object
+	// https://eslint.org/docs/rules/no-new-func
+	'no-new-func': 'error',
+
+	// Disallow new operators with the String, Number, and Boolean objects
+	// https://eslint.org/docs/rules/no-new-wrappers
+	'no-new-wrappers': 'error',
+
 	// Disallow octal literals
 	// https://eslint.org/docs/rules/no-octal
 	'no-octal': 'error',
+
+	// Disallow octal escape sequences in string literals
+	// https://eslint.org/docs/rules/no-octal-escape
+	'no-octal-escape': 'error',
 
 	// Disallow variable redeclaration
 	// https://eslint.org/docs/rules/no-redeclare
 	'no-redeclare': 'error',
 
+	// Disallow certain properties on certain objects
+	// https://eslint.org/docs/rules/no-restricted-properties
+	'no-restricted-properties': [ 'error', {
+			object: 'arguments',
+			property: 'callee',
+			message: 'arguments.callee is deprecated',
+		}, {
+			object: 'global',
+			property: 'isFinite',
+			message: 'Please use Number.isFinite instead',
+		}, {
+			object: 'self',
+			property: 'isFinite',
+			message: 'Please use Number.isFinite instead',
+		}, {
+			object: 'window',
+			property: 'isFinite',
+			message: 'Please use Number.isFinite instead',
+		}, {
+			object: 'global',
+			property: 'isNaN',
+			message: 'Please use Number.isNaN instead',
+		}, {
+			object: 'self',
+			property: 'isNaN',
+			message: 'Please use Number.isNaN instead',
+		}, {
+			object: 'window',
+			property: 'isNaN',
+			message: 'Please use Number.isNaN instead',
+		}, {
+			property: '__defineGetter__',
+			message: 'Please use Object.defineProperty instead.',
+		}, {
+			property: '__defineSetter__',
+			message: 'Please use Object.defineProperty instead.',
+		}, {
+			object: 'Math',
+			property: 'pow',
+			message: 'Use the exponentiation operator (**) instead.',
+		}, {
+			object: 'require',
+			property: 'ensure',
+			message: 'Please use import() instead.',
+		}, {
+			object: 'System',
+			property: 'import',
+			message: 'Please use import() instead.',
+		}
+	],
+
+	// Disallow javascript: urls
+	// https://eslint.org/docs/rules/no-script-url
+	'no-script-url': 'error',
+
 	// Disallow assignments where both sides are exactly the same
 	// https://eslint.org/docs/rules/no-self-assign
 	'no-self-assign': [ 'error', {
 		props: true,
+	} ],
+
+	// Disallow comparisons where both sides are exactly the same
+	// https://eslint.org/docs/rules/no-self-compare
+	'no-self-compare': 'error',
+
+	// Disallow comma operators
+	// https://eslint.org/docs/rules/no-sequences
+	'no-sequences': 'error',
+
+	// Disallow throwing literals as exceptions
+	// https://eslint.org/docs/rules/no-throw-literal
+	'no-throw-literal': 'error',
+
+	// Disallow unused expressions
+	// https://eslint.org/docs/rules/no-unused-expressions
+	'no-unused-expressions': [ 'error', {
+		allowShortCircuit: false,
+		allowTernary: false,
+		allowTaggedTemplates: false,
 	} ],
 
 	// Disallow unused labels
@@ -76,6 +218,10 @@ module.exports = {
 	// Disallow `void` operators
 	// https://eslint.org/docs/rules/no-void
 	'no-void': 'error',
+
+	// Disallow with statements
+	// https://eslint.org/docs/rules/no-with
+	'no-with': 'error',
 
 	// Enforce the consistent use of the radix argument when using parseInt()
 	// https://eslint.org/docs/rules/radix

@@ -5,6 +5,10 @@ module.exports = {
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-boolean-style
 	'flowtype/boolean-style': 'error',
 
+	// Marks Flow type identifiers as defined
+	// https://github.com/gajus/eslint-plugin-flowtype#define-flow-type
+	'flowtype/define-flow-type': 'warn',
+
 	// Enforces consistent use of trailing commas in Object and Tuple annotations
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-delimiter-dangle
 	'flowtype/delimiter-dangle': [ 'error', 'always-multiline' ],
@@ -42,4 +46,8 @@ module.exports = {
 	// Enforces a particular style for type imports
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-type-import-style
 	'flowtype/type-import-style': [ 'error', 'declaration' ],
+
+	// Marks Flow type alias declarations as used
+	// https://github.com/gajus/eslint-plugin-flowtype#use-flow-type
+	'flowtype/use-flow-type': 'warn',
 };

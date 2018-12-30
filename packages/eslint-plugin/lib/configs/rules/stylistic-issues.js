@@ -234,6 +234,10 @@ module.exports = {
 		after: true,
 	} ],
 
+	// Enforce location of semicolons
+	// https://eslint.org/docs/rules/semi-style
+	'semi-style': [ 'error', 'last' ],
+
 	// Enforce consistent spacing before blocks
 	// https://eslint.org/docs/rules/space-before-blocks
 	'space-before-blocks': 'error',

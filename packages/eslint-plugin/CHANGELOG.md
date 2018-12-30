@@ -1,3 +1,9 @@
+# Next
+- Added `semi-style`
+
+# 0.3.1
+- Updated dependencies
+
 # 0.3.0
 - Added `array-bracket-spacing`, `brace-style`, `camelcase`, `curly`, `computed-property-spacing`, `dot-notation`, `func-call-spacing`, `key-spacing`, `max-len`, `new-cap`, `import/no-duplicates`, `no-else-return`, `no-lonely-if`, `no-multiple-empty-lines`, `no-nested-ternary`, `no-new`, `no-shadow`, `no-trailing-spaces`, `object-curly-spacing`, `operator-linebreak`, `padded-blocks`, `semi`, `semi-spacing`, `space-before-function-paren`, `space-in-parens`, `space-unary-ops`, `react/jsx-curly-spacing`, `react/no-danger`, `react/no-deprecated`, `react/no-did-mount-set-state`, `react/no-did-update-set-state`, `react/no-string-refs`, `jsx-a11y/click-events-have-key-events`, `jsx-a11y/html-has-lang`, `jsx-a11y/interactive-supports-focus`, `jsx-a11y/label-has-associated-control`, `jsx-a11y/media-has-caption`, `jsx-a11y/no-autofocus`, `jsx-a11y/no-interactive-element-to-noninteractive-role`, `jsx-a11y/no-noninteractive-element-interactions`, `jsx-a11y/no-noninteractive-element-to-interactive-role`, `jsx-a11y/no-noninteractive-tabindex`, `jsx-a11y/no-static-element-interactions`, `jsx-a11y/tabindex-no-positive`, `jsx-a11y/lang`
 

@@ -1,5 +1,5 @@
 # Next
-- Added `semi-style`
+- Added `semi-style`, `import/no-useless-path-segments`, `import/newline-after-import`, `import/extensions`
 
 # 0.3.1
 - Updated dependencies

@@ -35,6 +35,13 @@ module.exports = {
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
 	'react/jsx-indent': [ 'error', 'tab' ],
 
+	// Limit maximum of props on a single line in JSX
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
+	'react/jsx-max-props-per-line': [ 'error', {
+		maximum: 1,
+		when: 'multiline',
+	} ],
+
 	// Prevent usage of .bind() in JSX props
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
 	'react/jsx-no-bind': [ 'error', {
@@ -105,6 +112,10 @@ module.exports = {
 		prop: 'parens-new-line',
 	} ],
 
+	// Prevent using this.state within a this.setState
+	// https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/no-access-state-in-setstate.md
+	'react/no-access-state-in-setstate': 'error',
+
 	// Prevent usage of Array index in keys
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
 	'react/no-array-index-key': 'error',
@@ -143,9 +154,36 @@ module.exports = {
 		ignoreStateless: true,
 	} ],
 
+	// Disallow using React.render/ReactDOM.render's return value
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+	'react/no-render-return-value': 'error',
+
 	// Prevent using string references
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
 	'react/no-string-refs': 'error',
+
+	// Prevent this from being used in stateless functional components
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
+	'react/no-this-in-sfc': 'error',
+
+	// Prevents common casing typos
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-typos.md
+	'react/no-typos': 'error',
+
+	// Prevent unused propType definitions
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+	'react/no-unused-prop-types': [ 'error', {
+		customValidators: [],
+		skipShapeProps: true,
+	} ],
+
+	// Prevent unused state values
+	// https://github.com/yannickcr/eslint-plugin-react/pull/1103/
+	'react/no-unused-state': 'error',
+
+	// Prevent usage of setState in componentWillUpdate
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
+	'react/no-will-update-set-state': 'error',
 
 	// Require ES6 class declarations over React.createClass
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
@@ -172,4 +210,8 @@ module.exports = {
 	// Require style prop value be an object or var
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
 	'react/style-prop-object': 'error',
+
+	// Prevent void DOM elements from receiving children
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
+	'react/void-dom-elements-no-children': 'error',
 };

@@ -1,5 +1,5 @@
 # Next
-- Added `semi-style`, `import/no-useless-path-segments`, `import/newline-after-import`, `import/extensions`
+- Added `semi-style`, `import/no-useless-path-segments`, `import/newline-after-import`, `import/extensions`, `react/jsx-max-props-per-line`, `react/no-typos`, `react/no-will-update-set-state`, `react/no-unused-prop-types`, `react/no-unused-state`, `react/no-render-return-value`, `react/no-this-in-sfc`, `react/no-access-state-in-setstate`, `react/void-dom-elements-no-children`
 
 # 0.3.1
 - Updated dependencies

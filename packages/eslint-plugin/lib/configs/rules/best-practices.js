@@ -7,6 +7,10 @@ module.exports = {
 		allowImplicit: true,
 	} ],
 
+	// Require return statements to either always or never specify values
+	// https://eslint.org/docs/rules/consistent-return
+	'consistent-return': 'error',
+
 	// Enforce consistent brace style for all control statements
 	// https://eslint.org/docs/rules/curly
 	curly: 'error',
@@ -133,6 +137,10 @@ module.exports = {
 	// Disallow octal escape sequences in string literals
 	// https://eslint.org/docs/rules/no-octal-escape
 	'no-octal-escape': 'error',
+
+	// Disallow the use of the __proto__ property
+	// https://eslint.org/docs/rules/no-proto
+	'no-proto': 'error',
 
 	// Disallow variable redeclaration
 	// https://eslint.org/docs/rules/no-redeclare

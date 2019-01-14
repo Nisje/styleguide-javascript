@@ -21,6 +21,10 @@ module.exports = {
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-types-missing-file-annotation
 	'flowtype/no-types-missing-file-annotation': 'error',
 
+	// Requires all type declarations to be at the top of the file, after any import declarations
+	// https://github.com/gajus/eslint-plugin-flowtype#require-types-at-top
+	'flowtype/require-types-at-top': 'error',
+
 	// Validate Flow file annotations
 	// https://github.com/gajus/eslint-plugin-flowtype#require-valid-file-annotation
 	'flowtype/require-valid-file-annotation': [ 'error', 'never', {
@@ -30,6 +34,11 @@ module.exports = {
 	// Enforces consistent use of semicolons after type aliases
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-semi
 	'flowtype/semi': 'error',
+
+	'flowtype/sort-keys': [ 'error', 'asc', {
+		"caseSensitive": true,
+		"natural": false
+	} ],
 
 	// Enforces consistent spacing after the type annotation colon
 	// https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-space-after-type-colon

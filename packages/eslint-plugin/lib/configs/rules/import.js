@@ -25,8 +25,12 @@ module.exports = {
 	// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
 	'import/no-duplicates': 'error',
 
+	// Forbid a module from importing itself
+	// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
+	'import/no-self-import': 'error',
+
 	// Ensures that there are no useless path segments
-	// https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
+	// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
 	'import/no-useless-path-segments': 'error',
 
 	// Forbid Webpack loader syntax in imports

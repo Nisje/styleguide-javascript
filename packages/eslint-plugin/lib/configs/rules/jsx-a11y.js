@@ -8,7 +8,12 @@ module.exports = {
 	// Enforce that all elements that require alternative text have meaningful information
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md
 	'jsx-a11y/alt-text': [ 'error', {
-		elements: [ 'img', 'object', 'area', 'input[type="image"]' ],
+		elements: [
+			'img',
+			'object',
+			'area',
+			'input[type="image"]',
+		],
 		img: [],
 		object: [],
 		area: [],
@@ -26,7 +31,11 @@ module.exports = {
 	'jsx-a11y/anchor-is-valid': [ 'error', {
 		components: [ 'Link' ],
 		specialLink: [ 'to' ],
-		aspects: [ 'noHref', 'invalidHref', 'preferButton' ],
+		aspects: [
+			'noHref',
+			'invalidHref',
+			'preferButton',
+		],
 	} ],
 
 	// Elements with aria-activedescendant must be tabbable
@@ -43,7 +52,9 @@ module.exports = {
 
 	// Require ARIA roles to be valid and non-abstract
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
-	'jsx-a11y/aria-role': [ 'error', { ignoreNonDom: false } ],
+	'jsx-a11y/aria-role': [ 'error', {
+		ignoreNonDom: false,
+	} ],
 
 	// Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
@@ -80,7 +91,7 @@ module.exports = {
 		labelAttributes: [],
 		controlComponents: [],
 		assert: 'both',
-		depth: 25
+		depth: 25,
 	} ],
 
 	// Require HTML element's lang prop to be valid
@@ -112,13 +123,19 @@ module.exports = {
 	// Prevent distracting elements, like <marquee> and <blink>
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md
 	'jsx-a11y/no-distracting-elements': [ 'error', {
-		elements: [ 'marquee', 'blink' ],
+		elements: [
+			'marquee',
+			'blink',
+		],
 	} ],
 
 	// WAI-ARIA roles should not be used to convert an interactive element to non-interactive
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-interactive-element-to-noninteractive-role.md
 	'jsx-a11y/no-interactive-element-to-noninteractive-role': [ 'error', {
-		tr: [ 'none', 'presentation' ],
+		tr: [
+			'none',
+			'presentation',
+		],
 	} ],
 
 	// A non-interactive element does not support event handlers (mouse and key handlers)
@@ -137,9 +154,31 @@ module.exports = {
 	// WAI-ARIA roles should not be used to convert a non-interactive element to interactive
 	// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-to-interactive-role.md
 	'jsx-a11y/no-noninteractive-element-to-interactive-role': [ 'error', {
-		ul: [ 'listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid' ],
-		ol: [ 'listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid' ],
-		li: [ 'menuitem', 'option', 'row', 'tab', 'treeitem' ],
+		ul: [
+			'listbox',
+			'menu',
+			'menubar',
+			'radiogroup',
+			'tablist',
+			'tree',
+			'treegrid',
+		],
+		ol: [
+			'listbox',
+			'menu',
+			'menubar',
+			'radiogroup',
+			'tablist',
+			'tree',
+			'treegrid',
+		],
+		li: [
+			'menuitem',
+			'option',
+			'row',
+			'tab',
+			'treeitem',
+		],
 		table: [ 'grid' ],
 		td: [ 'gridcell' ],
 	} ],

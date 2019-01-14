@@ -1,3 +1,7 @@
+# 0.5.0
+- Added `react/no-unescaped-entities`, `react/no-unknown-property`, `react/jsx-indent-props`, `flowtype/require-types-at-top`, `prefer-object-spread`, `prefer-arrow-callback`, `prefer-rest-params`, `prefer-spread`, `switch-colon-spacing`, `spaced-comment`, `consistent-return`, `func-names`, `function-paren-newline`, `no-underscore-dangle`, `no-proto`, `prefer-destructuring`, `object-curly-newline`, `no-unneeded-ternary`, `import/no-self-import`, `no-undef-init`, `no-undefined`, `generator-star-spacing`, `arrow-body-style`
+- Updated dependencies
+
 # 0.4.0
 - Added `semi-style`, `import/no-useless-path-segments`, `import/newline-after-import`, `import/extensions`, `react/jsx-max-props-per-line`, `react/no-typos`, `react/no-will-update-set-state`, `react/no-unused-prop-types`, `react/no-unused-state`, `react/no-render-return-value`, `react/no-this-in-sfc`, `react/no-access-state-in-setstate`, `react/void-dom-elements-no-children`
 - Update dependencies

@@ -1,9 +1,22 @@
 // https://eslint.org/docs/rules/#ecmascript-6
 
 module.exports = {
+	// Require braces around arrow function bodies
+	// https://eslint.org/docs/rules/arrow-body-style
+	'arrow-body-style': [ 'error', 'as-needed', {
+		requireReturnForObjectLiteral: false,
+	} ],
+
 	// Require `super()` calls in constructors
 	// https://eslint.org/docs/rules/constructor-super
 	'constructor-super': 'error',
+
+	// Enforce consistent spacing around * operators in generator functions
+	// https://eslint.org/docs/rules/generator-star-spacing
+	'generator-star-spacing': [ 'error', {
+		before: false,
+		after: true,
+	} ],
 
 	// Disallow reassigning class members
 	// https://eslint.org/docs/rules/no-class-assign
@@ -57,12 +70,42 @@ module.exports = {
 		avoidQuotes: true,
 	} ],
 
+	// Require using arrow functions for callbacks
+	// https://eslint.org/docs/rules/prefer-arrow-callback
+	'prefer-arrow-callback': [ 'error', {
+		allowNamedFunctions: false,
+		allowUnboundThis: true,
+	} ],
+
 	// Require `const` declarations for variables that are never reassigned after declared
 	// https://eslint.org/docs/rules/prefer-const
 	'prefer-const': [ 'error', {
 		destructuring: 'any',
 		ignoreReadBeforeAssign: true,
 	} ],
+
+	// Require destructuring from arrays and/or objects
+	// https://eslint.org/docs/rules/prefer-destructuring
+	'prefer-destructuring': [ 'error', {
+		VariableDeclarator: {
+			array: false,
+			object: true,
+		},
+		AssignmentExpression: {
+			array: true,
+			object: true,
+		},
+	}, {
+		enforceForRenamedProperties: false,
+	} ],
+
+	// Require rest parameters instead of arguments
+	// https://eslint.org/docs/rules/prefer-rest-params
+	'prefer-rest-params': 'error',
+
+	// Require spread operators instead of .apply()
+	// https://eslint.org/docs/rules/prefer-spread
+	'prefer-spread': 'error',
 
 	// Require template literals instead of string concatenation
 	// https://eslint.org/docs/rules/prefer-template

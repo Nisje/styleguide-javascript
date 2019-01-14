@@ -17,7 +17,9 @@ module.exports = {
 
 	// Enforce boolean attributes notation in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
-	'react/jsx-boolean-value': [ 'error', 'never', { always: [] } ],
+	'react/jsx-boolean-value': [ 'error', 'never', {
+		always: [],
+	} ],
 
 	// Validate closing bracket location in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
@@ -34,6 +36,10 @@ module.exports = {
 	// Validate JSX indentation
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
 	'react/jsx-indent': [ 'error', 'tab' ],
+
+	// Validate props indentation in JSX
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
+	'react/jsx-indent-props': [ 'error', 'tab' ],
 
 	// Limit maximum of props on a single line in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
@@ -58,7 +64,7 @@ module.exports = {
 
 	// Prevent duplicate properties in JSX
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
-	'react/jsx-no-duplicate-props': ['error', {
+	'react/jsx-no-duplicate-props': [ 'error', {
 		ignoreCase: true,
 	} ],
 
@@ -158,6 +164,10 @@ module.exports = {
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
 	'react/no-render-return-value': 'error',
 
+	// Prevent usage of setState
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
+	'react/no-set-state': 'off',
+
 	// Prevent using string references
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
 	'react/no-string-refs': 'error',
@@ -169,6 +179,14 @@ module.exports = {
 	// Prevents common casing typos
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-typos.md
 	'react/no-typos': 'error',
+
+	// Prevent invalid characters from appearing in markup
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
+	'react/no-unescaped-entities': 'error',
+
+	// Prevent usage of unknown DOM property
+	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+	'react/no-unknown-property': 'error',
 
 	// Prevent unused propType definitions
 	// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md

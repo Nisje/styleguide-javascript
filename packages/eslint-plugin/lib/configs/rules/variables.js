@@ -6,6 +6,10 @@
 const confusingBrowserGlobals = require( 'confusing-browser-globals' );
 
 module.exports = {
+	// Require or disallow initialization in variable declarations
+	// https://eslint.org/docs/rules/init-declarations
+	'init-declarations': 'off',
+
 	// Disallow deleting variables
 	// https://eslint.org/docs/rules/no-delete-var
 	'no-delete-var': 'error',
@@ -29,6 +33,14 @@ module.exports = {
 	// Disallow the use of undeclared variables unless mentioned in /*global */ comments
 	// https://eslint.org/docs/rules/no-undef
 	'no-undef': 'error',
+
+	// Disallow initializing variables to undefined
+	// https://eslint.org/docs/rules/no-undef-init
+	'no-undef-init': 'error',
+
+	// Disallow the use of undefined as an identifier
+	// https://eslint.org/docs/rules/no-undefined
+	'no-undefined': 'error',
 
 	// Disallow unused variables
 	// https://eslint.org/docs/rules/no-unused-vars

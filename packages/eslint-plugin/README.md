@@ -8,7 +8,7 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install [`@nisje/eslint-plugin`](https://github.com/DekodeInteraktiv/nisje/styleguide-javascript/tree/master/packages/@nisje/eslint-plugin):
+Next, install [`@nisje/eslint-plugin`](https://github.com/nisje/styleguide-javascript/tree/master/packages/eslint-plugin):
 
 ```
 $ npm install @nisje/eslint-plugin --save-dev
